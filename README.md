@@ -16,7 +16,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 contract DigitalRufiyaa is BEP20, Ownable {
     constructor() BEP0("DigitalRufiyaa", "DRF") {
         // Mint an initial supply of 1 billion tokens to the deployer's address
-        _mint(msg.sender, 1000000000 * 10 ** decimals()); // 1 billion DRF tokens
+        _mint(msg.sender, 1000000000 * 10 ** decimals(18)); // 1 billion DRF tokens
     }
 
     // Mint function (optional)
